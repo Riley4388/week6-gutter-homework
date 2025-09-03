@@ -1,0 +1,28 @@
+// 按鈕hover變色
+.btn-primary-status {
+  &:hover {
+    background-color: $accent-300;
+    border-color: $accent-300;
+  }
+}
+
+
+// 搜尋bar外光暈
+form .form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// 搜尋bar連動
+.navbar{
+  form {
+    width: 276px;
+
+    &:focus-within {
+      span {
+        color: $gray-600!important;
+      }
+    }
+  }
+} 
