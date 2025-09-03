@@ -104,15 +104,13 @@
   }
 }
 
-.selected-article {
-  .swap-control {
-    .btn {
-      color: $gray-400;
+.swap-control {
+  .btn {
+    color: $gray-400;
 
-      &:hover {
-        background: $gray-400;
-        color: white;
-      }
+    &:hover {
+      background: $gray-400;
+      color: white;
     }
   }
 }
@@ -168,5 +166,38 @@
       text-align: start;
       margin-bottom: 24px;
     }
+  }
+}
+
+.big-title {
+  font-size: 52px;
+}
+
+.style-proposal {
+  .card {
+    border-radius: 0;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      // 為了讓偽元素稱滿外層
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      @include gradient-x-three-colors;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        opacity: 0.4;
+      }
+    }
+
   }
 }

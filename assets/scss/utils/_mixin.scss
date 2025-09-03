@@ -1,3 +1,4 @@
-@mixin btn_green_lg{
-    
+@mixin gradient-x-three-colors($start-color: $black, $start-opacity: 0, $end-color: $black) {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,1));
+
 }
