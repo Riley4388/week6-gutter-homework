@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -306,13 +309,12 @@
                     </li>
                   </ul>
                   <div class="d-flex align-items-center py-5">
-                    <span class="badge bg-primary-300 me-3">#夜貓行程</span>
-                    <span class="badge bg-primary-300 me-3">#barhopping</span>
-                    <span class="badge bg-primary-300 me-3">#全台酒吧</span>
+                    <a href="#" class="badge me-3">#夜貓行程</a>
+                    <a href="#" class="badge me-3">#barhopping</a>
+                    <a href="#" class="badge me-3">#全台酒吧</a>
                     <a href="#" class="link fw-bolder fs-5  ms-auto ">View More<i
                         class="ms-2 bi bi-arrow-right"></i></a>
                   </div>
-
                 </div>
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                   <div class="card mb-3">
@@ -359,10 +361,10 @@
                       </picture>
                     </li>
                   </ul>
-                  <div class="d-flex align-items-center py-5">
-                    <span class="badge bg-primary-300 me-3">#夜貓行程</span>
-                    <span class="badge bg-primary-300 me-3">#barhopping</span>
-                    <span class="badge bg-primary-300 me-3">#全台酒吧</span>
+                 <div class="d-flex align-items-center py-5">
+                    <a href="#" class="badge me-3">#夜貓行程</a>
+                    <a href="#" class="badge me-3">#barhopping</a>
+                    <a href="#" class="badge me-3">#全台酒吧</a>
                     <a href="#" class="link fw-bolder fs-5  ms-auto ">View More<i
                         class="ms-2 bi bi-arrow-right"></i></a>
                   </div>
@@ -414,10 +416,10 @@
                       </picture>
                     </li>
                   </ul>
-                  <div class="d-flex align-items-center py-5">
-                    <span class="badge bg-primary-300 me-3">#夜貓行程</span>
-                    <span class="badge bg-primary-300 me-3">#barhopping</span>
-                    <span class="badge bg-primary-300 me-3">#全台酒吧</span>
+                 <div class="d-flex align-items-center py-5">
+                    <a href="#" class="badge me-3">#夜貓行程</a>
+                    <a href="#" class="badge me-3">#barhopping</a>
+                    <a href="#" class="badge me-3">#全台酒吧</a>
                     <a href="#" class="link fw-bolder fs-5  ms-auto ">View More<i
                         class="ms-2 bi bi-arrow-right"></i></a>
                   </div>
@@ -469,9 +471,9 @@
                     </li>
                   </ul>
                   <div class="d-flex align-items-center py-5">
-                    <span class="badge bg-primary-300 me-3">#夜貓行程</span>
-                    <span class="badge bg-primary-300 me-3">#barhopping</span>
-                    <span class="badge bg-primary-300 me-3">#全台酒吧</span>
+                    <a href="#" class="badge me-3">#夜貓行程</a>
+                    <a href="#" class="badge me-3">#barhopping</a>
+                    <a href="#" class="badge me-3">#全台酒吧</a>
                     <a href="#" class="link fw-bolder fs-5  ms-auto ">View More<i
                         class="ms-2 bi bi-arrow-right"></i></a>
                   </div>
@@ -653,9 +655,27 @@
         </div>
       </div>
     </section>
+
+
     <%- include('./layout/footer'); -%>
 
+      <!-- 套件 -->
       <script type="module" src="../main.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        }); 
+      </script>
 </body>
 
 </html>
