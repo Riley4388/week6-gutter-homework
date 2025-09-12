@@ -190,6 +190,54 @@
   }
 }
 
+.register {
+  small {
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      flex: 1;
+      height: 1px;
+      background-color: $gray-300;
+    }
+
+    &::before {
+      margin-right: 0.5rem;
+    }
+
+    &::after {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.subscribe {
+  .nav-pills {
+    .active {
+      background-color: $accent-200;
+      color: white;
+    }
+  }
+
+  small {
+    font-size: 22px;
+  }
+
+  &-items {
+
+    .active {
+      color: $gray-500 !important;
+      border: 2px solid $accent-200 !important;
+
+      span {
+        color: $accent-200;
+      }
+    }
+  }
+
+}
+
 
 
 
@@ -212,4 +260,8 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.text-nowrap{
+  white-space: nowrap;
 }

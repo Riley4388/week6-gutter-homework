@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂閱方案</title>
+
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <section class="bg-primary-100">
+            <div class="subscribe container py-17  border-top border-1 border-gray-300">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                        <li class="breadcrumb-item active">訂閱方案</li>
+                    </ol>
+                </nav>
+                <h1 class="h1 text-gray-500 mb-3">訂閱方案</h1>
+                <div class="row  d-flex flex-column align-items-center">
+                    <div class="col-4 mx-auto ">
+                        <nav class="nav nav-pills nav-fill">
+                            <a class="nav-link active" aria-current="page" href="#">年繳</a>
+                            <a class="nav-link " href="#">月繳</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="subscribe-items row mt-9">
+                    <div class="col-4 position-relative">
+                        <div class="bg-white border rounded-2 border-primary-300 p-9  h-100 d-flex flex-column text-gray-400">
+                            <div class="text-center mb-12">
+                                <p class="fs-5">輕量型</p>
+                                <p class="fs-4"><span class="fs-1">NT 99</span>/ 月</p>
+                            </div>
+                            <div class=" d-flex flex-column gap-5">
+                                <p><i class="bi bi-check-square-fill me-1"></i>每月最新文章無限閱讀 </p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>專屬會員限定內容</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>定期電子報</p>
+                            </div>
+                            <a href="./payment.html"
+                                class="btn btn-sm w-100 btn-gray-100 btn-gray-status mt-auto stretched-link">
+                                我要訂閱<i class="ms-5 bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 position-relative">
+                        <div
+                            class=" bg-white border rounded-2 border-primary-300 p-9  h-100 d-flex flex-column text-gray-400">
+                            <div class="text-center mb-12">
+                                <p class="fs-5">玩咖型</p>
+                                <p class="fs-4"><span class="fs-1">NT 159</span>/ 月</p>
+                            </div>
+                            <div class="  d-flex flex-column gap-5">
+                                <p><i class="bi bi-check-square-fill me-1"></i>每月最新文章無限閱讀 </p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>專屬會員限定內容</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>定期電子報</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>年度精選禮物</p>
+                            </div>
+                            <a href="./payment.html" class="btn btn-sm w-100 btn-gray-100 btn-gray-status mt-auto stretched-link ">
+                                我要訂閱<i class="ms-5 bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 position-relative">
+                        <div class=" bg-white border rounded-2 border-primary-300 p-9  h-100 d-flex flex-column text-gray-400  active">
+                            <div class="text-center mb-12">
+                                <p class="fs-5">家庭型</p>
+                                <p class="fs-4"><span class="fs-1">NT 599</span>/ 月</p>
+                                <small class="text-gray-300">NT 899</small>
+                            </div>
+                            <div class="items d-flex flex-column gap-5 mb-8">
+                                <p><i class="bi bi-check-square-fill me-1"></i>每月最新文章無限閱讀 </p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>專屬會員限定內容</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>定期電子報</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>年度精選禮物</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>24/7 優先客戶服務</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>為每個成員量身打造專屬行程</p>
+                                <p><i class="bi bi-check-square-fill me-1"></i>最多 5 個家庭成員共享</p>
+
+                            </div>
+                            <a href="./payment.html"
+                                class="btn btn-sm w-100 btn-accent-200 link-light btn-primary-status mt-auto stretched-link">
+                                我要訂閱<i class="ms-5 bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <%- include('./layout/footer'); -%>
+            <!-- 套件 -->
+            <script type="module" src="../main.js"></script>
+
+</body>

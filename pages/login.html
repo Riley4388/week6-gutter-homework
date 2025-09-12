@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入/註冊</title>
+
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <section class="bg-primary-100">
+            <div class="register container py-17  border-top border-1 border-gray-300">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 ">
+                        <div class="bg-white border rounded-2 border-primary-300 p-9">
+                            <div class="d-flex flex-column gap-9">
+                                <h4 class="text-accent-200">登入</h4>
+                                <form class="d-flex flex-column gap-3">
+                                    <div>
+                                        <label class="mb-2" for="registerAccount">會員帳號</label>
+                                        <input type="text" class="form-control" id="registerAccount"
+                                            placeholder="請輸入會員帳號">
+                                    </div>
+                                    <div>
+                                        <label class="mb-2" for="registerPassword">密碼</label>
+                                        <input type="password" class="form-control" id="registerPassword"
+                                            placeholder="請輸入密碼">
+                                    </div>
+                                  
+                                    <button class="btn btn-sm btn-accent-200 link-light btn-primary-status mt-9">
+                                        立即登入<i class="ms-5 bi bi-arrow-right"></i>
+                                    </button>
+                                </form>
+                                <small
+                                    class="fs-6 text-gray-300 d-flex flex-nowarp align-items-center ">或以其他方式登入</small>
+                                <div class="d-flex flex-column gap-3">
+                                    <button class="btn btn-sm btn-gray-100  btn-gray-status">
+                                        <img src="../assets/images/icons-google.png" alt=""> 使用 Google 登入
+                                    </button>
+                                    <button class="btn btn-sm btn-gray-100  btn-gray-status">
+                                        <img src="../assets/images/icons-facebook.png" alt=""> 使用 Facebook 登入
+                                    </button>
+                                </div>
+                                <p class="fs-6 text-center align-center">還不是會員？ <a href="./register.html">點此註冊</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('./layout/footer'); -%>
+            <!-- 套件 -->
+            <script type="module" src="../main.js"></script>
+
+</body>

@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關於我們</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="bg-primary-100">
+      <section class="banner container">
+        <picture>
+          <!-- 當螢幕寬度少於600px時，替換圖片 -->
+          <source srcset="../assets/images/about-banner-sm.png" media="(max-width: 992px)">
+          <!-- 預設圖片，通常是桌面版本 -->
+          <img c src="../assets/images/about-banner.png" alt="Logo" width="1296" height="454">
+        </picture>
+      </section>
+      <section class="title container py-17">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+              <li class="breadcrumb-item active">關於我們</li>
+            </ol>
+          </nav>
+          <h1 class="h1 text-black mb-9">關於我們</h1>
+        </section>
+        
+    </main>
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款</title>
+
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <section class="bg-primary-100">
+            <div class="payment-success container py-17  border-top border-1 border-gray-300">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="text-accent-200 mb-9"><i class="bi bi-check2-circle me-4"></i>付款成功</h1>
+
+                    <div class="col-6">
+                        <div class="bg-white border rounded-2 border-primary-300 p-9 mb-4">
+                            <div class="d-flex flex-column gap-9">
+                                <h4 class="text-black">訂單資訊</h4>
+
+                                <div class="py-5 border-top border-bottom border-1 border-gray-200">
+                                    <div class="d-flex flex-column gap-9">
+                                        <div>
+                                            <h5 class="text-black d-flex mb-3">輕量型方案 <span
+                                                    class="fs-5 fw-bold ms-auto">NT
+                                                    1,188</span></h5>
+                                            <p class="text-gray-400">年繳</p>
+                                        </div>
+                                        <div class="text-gray-400">
+                                            <p class="d-flex mb-3">開始日<time datetime="2024-05-01"
+                                                    class="fw-bold ms-auto">2024 / 5 / 1</time></p>
+                                            <p class="d-flex mb-3">終止日<time datetime="2024-05-01"
+                                                    class="fw-bold ms-auto">2025 / 5 / 1</time></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="./index.html"
+                                    class="btn w-100 btn-accent-200 link-light btn-primary-status mt-auto ">
+                                    瀏覽文章<i class="ms-5 bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <%- include('./layout/footer'); -%>
+            <!-- 套件 -->
+            <script type="module" src="../main.js"></script>
+
+</body>
