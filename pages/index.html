@@ -15,12 +15,17 @@
   <%- include('./layout/header'); -%>
 
     <main class="bg-primary-100">
-      <section class="container col-12  border-top border-1 border-gray-300">
-        <div class="banner d-flex align-items-center my-17 border-top">
-          <div class="ms-12">
+      <section class="container col-12 gx-0 border-top border-1 border-gray-300">
+        <div class="banner d-flex align-items-lg-center align-items-end justify-content-lg-start  justify-content-center my-lg-17 border-top">
+          <div class="ms-lg-12 mb-10 mb-lg-0 d-flex flex-column align-items-lg-start align-items-center">
             <p class="fs-5 mb-2 text-white">獻給新世代的生活風格誌</p>
             <h1 class="h1 fw-bolder mb-5 text-white">一起探索生活的無限可能</h1>
-            <a href="#" class="btn btn-accent-200 link-light btn-primary-status">
+            <!-- 桌面 -->
+            <a href="#" class="btn d-lg-block d-none btn-accent-200 link-light btn-primary-status ">
+              馬上訂閱<i class="ms-5 bi bi-arrow-right"></i>
+            </a>
+            <!-- 手機 -->
+            <a href="#" class="d-lg-none d-block btn btn-sm btn-accent-200 link-light btn-primary-status ">
               馬上訂閱<i class="ms-5 bi bi-arrow-right"></i>
             </a>
           </div>
@@ -30,17 +35,17 @@
     </main>
     <!-- 熱門主題 -->
     <section class="hot bg-primary-100">
-      <div class="container py-17 ">
+      <div class="container py-lg-17 py-10 ">
         <h2 class="h2 text-gray-500 fw-bolder mb-5">熱門主題</h2>
         <div class="row gy-5">
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-1-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-1-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-1.png" alt="Logo">
+                  <img src="../assets/images/theme-1.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">城市漫遊者</h5>
@@ -48,14 +53,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-2-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-2-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-2.png" alt="Logo">
+                  <img src="../assets/images/theme-2.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">秘境尋蹤人</h5>
@@ -63,14 +68,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-3-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-3-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-3.png" alt="Logo">
+                  <img src="../assets/images/theme-3.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">品味設計家</h5>
@@ -78,14 +83,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-4-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-4-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-4.png" alt="Logo">
+                  <img src="../assets/images/theme-4.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">美食探險記</h5>
@@ -93,14 +98,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-5-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-5-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-5.png" alt="Logo">
+                  <img src="../assets/images/theme-5.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">美學建築誌</h5>
@@ -108,14 +113,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
-                <picture class="card-img">
+                <picture class="card-img ">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-6-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-6-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-6.png" alt="Logo">
+                  <img src="../assets/images/theme-6.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">慢活生活行</h5>
@@ -123,14 +128,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-7-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-7-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-7.png" alt="Logo">
+                  <img src="../assets/images/theme-7.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">工藝匠心賞</h5>
@@ -138,14 +143,14 @@
               </a>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-12">
             <div class="card position-relative">
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-8-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/theme-8-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-8.png" alt="Logo">
+                  <img src="../assets/images/theme-8.png" alt="Logo" class="w-100">
                 </picture>
                 <div class="card-img-overlay d-flex align-items-center justify-content-center h-100">
                   <h5 class="card-title fw-bolder text-white z-1">時尚先鋒派</h5>

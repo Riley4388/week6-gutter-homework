@@ -2,3 +2,9 @@
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,1));
 
 }
+
+@mixin mobile{
+    @media (max-width: 576px) {
+     @content;
+  }
+}
