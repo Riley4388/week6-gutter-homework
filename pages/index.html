@@ -16,7 +16,8 @@
 
     <main class="bg-primary-100">
       <section class="container col-12 gx-0 border-top border-1 border-gray-300">
-        <div class="banner d-flex align-items-lg-center align-items-end justify-content-lg-start  justify-content-center my-lg-17 border-top">
+        <div
+          class="banner d-flex align-items-lg-center align-items-end justify-content-lg-start  justify-content-center my-lg-17 border-top">
           <div class="ms-lg-12 mb-10 mb-lg-0 d-flex flex-column align-items-lg-start align-items-center">
             <p class="fs-5 mb-2 text-white">獻給新世代的生活風格誌</p>
             <h1 class="h1 fw-bolder mb-5 text-white">一起探索生活的無限可能</h1>
@@ -35,7 +36,7 @@
     </main>
     <!-- 熱門主題 -->
     <section class="hot bg-primary-100">
-      <div class="container py-lg-17 py-10 ">
+      <div class="container py-lg-17 py-10">
         <h2 class="h2 text-gray-500 fw-bolder mb-5">熱門主題</h2>
         <div class="row gy-5">
           <div class="col-lg-3 col-12">
@@ -163,14 +164,15 @@
     </section>
     <!-- 精選文章 -->
     <section class="selected-article bg-primary-100">
-      <div class="container py-17">
+      <div class="container py-lg-17 py-10">
         <div class="row">
-          <div class="col-4 d-flex flex-column justify-content-between ">
+          <div class="col-lg-4 d-flex flex-column justify-content-between mt-5 mt-lg-0">
             <h2 class="h2 text-gray-500 fw-bolder mb-5">精選文章</h2>
-            <div class="swap-control ">
-              <div class="pagination mb-7">
+            <div
+              class="d-lg-block d-none swap-control d-flex flex-lg-column align-items-lg-start align-items-center justify-content-between">
+              <div class="pagination mb-lg-7">
                 <span>1</span>
-                /
+                <span class="mx-2">/</span>
                 <span>2</span>
               </div>
               <div class="d-flex align-items-center">
@@ -186,7 +188,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-8 d-flex gap-10">
             <div class="card">
               <div class="border-bottom border-1 border-gray-500">
                 <img src="../assets/images/article-banner.png" class="card-img-top mb-5" alt="...">
@@ -198,9 +200,7 @@
                 <a href="#" class="link fw-bolder fs-5  mb-5 ">Read More</a>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
+            <div class="card d-none d-lg-block">
               <div class="border-bottom border-1 border-gray-500">
                 <img src="../assets/images/article-banner.png" class="card-img-top mb-5" alt="...">
                 <div class="card-body mb-5">
@@ -209,6 +209,25 @@
                     遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
                 </div>
                 <a href="#" class="link fw-bolder fs-5  mb-5 ">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-lg-none d-block mt-9 swap-control d-flex flex-lg-column align-items-lg-start align-items-center justify-content-between">
+            <div class="pagination mb-lg-7">
+              <span>1</span>
+              <span class="mx-2">/</span>
+              <span>2</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="btn border-1 border-gray-400 rounded-pill px-3 py-0">
+                <i class="bi bi-arrow-left fs-4 fw-bolder"></i>
+              </div>
+              <div>
+                <span class="switcher-line"></span>
+              </div>
+              <div class="btn border-1 border-gray-400 rounded-pill px-3 py-0">
+                <i class="bi bi-arrow-right fs-4 fw-bolder"></i>
               </div>
             </div>
           </div>
@@ -236,10 +255,10 @@
     </section>
     <!-- 大家都在看 -->
     <section class="hot-journey  bg-primary-100">
-      <div class="container py-17">
+      <div class="container py-lg-17 py-10">
         <h2 class="h2 text-gray-500 fw-bolder mb-5">大家都在看</h2>
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 d-lg-block d-none">
             <div class="nav flex-column nav-pills rounded-3 bg-white h-100 p-5 gy-5 align-items-start" id="v-pills-tab"
               role="tablist" aria-orientation="vertical">
               <button class="nav-link fs-4 fw-bolder mb-4 active w-100 text-start" id="v-pills-home-tab"
@@ -263,64 +282,47 @@
                 aria-controls="v-pills-settings" aria-selected="false">•週末露營趣 </button>
             </div>
           </div>
-          <div class="col-9 ">
-            <div class="bg-white rounded-3 p-9">
-              <div class="tab-content  " id="v-pills-tabContent">
+          <div class="col-lg-9 col-12">
+            <div class="bg-white rounded-3 p-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                   aria-labelledby="v-pills-home-tab">
-
-                  <div class="card mb-3">
-                    <div class="card-body p-4">
-                      <h4 class="card-title text-accent-200 mb-5">酒精路跑地圖</h4>
-                      <ul class="list-unstyled">
-                        <li class="mb-4">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
-                        <li class="mb-4">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                  <div class="card mb-3 ">
+                    <div class="card-body p-lg-4">
+                      <h4 class="card-title text-accent-200 mb-lg-5">酒精路跑地圖</h4>
+                      <ul class="list-unstyled d-flex flex-column gap-1 mb-0">
+                        <li>｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                        <li>｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
                         <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
                       </ul>
                     </div>
                   </div>
-                  <ul class="list-unstyled d-flex d-column justify-content-between">
+                  <img class="mb-3 w-100 d-block d-lg-none" src="../assets/images/hots-1-sm.png" alt="Logo">
+                  <ul class="list-unstyled d-lg-flex d-none d-column justify-content-between">
                     <li class="rounded-end rounded-4 overflow-hidden">
-                      <picture>
-                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                        <source srcset="../assets/hots-1-sm.png" media="(max-width: 992px)">
-                        <!-- 預設圖片，通常是桌面版本 -->
-                        <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
-                      </picture>
+                      <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
                     </li>
                     <li class="rounded rounded-1 overflow-hidden">
-                      <picture>
-                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                        <source srcset="../assets/hots-1-sm.png" media="(max-width: 992px)">
-                        <!-- 預設圖片，通常是桌面版本 -->
-                        <img src="../assets/images/hots-1.png" alt="Logo">
-                      </picture>
+                      <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
                     </li>
                     <li class="rounded rounded-1 overflow-hidden">
-                      <picture>
-                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                        <source srcset="../assets/hots-1-sm.png" media="(max-width: 992px)">
-                        <!-- 預設圖片，通常是桌面版本 -->
-                        <img src="../assets/images/hots-1.png" alt="Logo">
-                      </picture>
+                      <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
                     </li>
                     <li class="rounded-start rounded-4 overflow-hidden">
-                      <picture>
-                        <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                        <source srcset="../assets/hots-1-sm.png" media="(max-width: 992px)">
-                        <!-- 預設圖片，通常是桌面版本 -->
-                        <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
-                      </picture>
+                      <img class="overflow-hidden" src="../assets/images/hots-1.png" alt="Logo">
                     </li>
                   </ul>
-                  <div class="d-flex align-items-center py-5">
-                    <a href="#" class="badge me-3">#夜貓行程</a>
-                    <a href="#" class="badge me-3">#barhopping</a>
-                    <a href="#" class="badge me-3">#全台酒吧</a>
-                    <a href="#" class="link fw-bolder fs-5  ms-auto ">View More<i
+                  <div class="d-flex flex-lg-row flex-column gap-3 align-items-center py-lg-5 ">
+                    <div class="d-flex">
+                      <a href="#" class="badge me-3">#夜貓行程</a>
+                      <a href="#" class="badge me-3">#barhopping</a>
+                      <a href="#" class="badge">#全台酒吧</a>
+                    </div>
+                    <a href="#" class="link fw-bolder fs-5  ms-lg-auto ">View More<i
                         class="ms-2 bi bi-arrow-right"></i></a>
                   </div>
                 </div>
+
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                   <div class="card mb-3">
                     <div class="card-body p-4">
@@ -366,7 +368,7 @@
                       </picture>
                     </li>
                   </ul>
-                 <div class="d-flex align-items-center py-5">
+                  <div class="d-flex align-items-center py-5">
                     <a href="#" class="badge me-3">#夜貓行程</a>
                     <a href="#" class="badge me-3">#barhopping</a>
                     <a href="#" class="badge me-3">#全台酒吧</a>
@@ -421,7 +423,7 @@
                       </picture>
                     </li>
                   </ul>
-                 <div class="d-flex align-items-center py-5">
+                  <div class="d-flex align-items-center py-5">
                     <a href="#" class="badge me-3">#夜貓行程</a>
                     <a href="#" class="badge me-3">#barhopping</a>
                     <a href="#" class="badge me-3">#全台酒吧</a>
@@ -492,10 +494,10 @@
     </section>
     <!-- 品味生活 -->
     <section class="enjoy-life  bg-primary-100">
-      <div class="container py-17 w-100">
+      <div class="container py-lg-17 py-10 w-100">
         <div class="swap-control d-flex align-item-center justify-content-between mb-9">
           <h2 class="h2 text-gray-500 fw-bolder ">品味生活</h2>
-          <div class="d-flex align-items-center">
+          <div class="d-none d-lg-flex align-items-center">
             <div class="btn border-1 border-gray-400 rounded-pill px-3 py-0">
               <i class="bi bi-arrow-left fs-4 fw-bolder"></i>
             </div>
@@ -509,7 +511,7 @@
         </div>
 
         <div class="row d-flex">
-          <div class="col-4">
+          <div class="col-lg-4 col-12">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">食.</h5>
               <img src="../assets/images/life-1.png" class="card-img-top mb-8" alt="...">
@@ -523,7 +525,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-lg-4 col-12">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">藝.</h5>
               <img src="../assets/images/life-2.png" class="card-img-top mb-8" alt="...">
@@ -537,7 +539,7 @@
             </div>
           </div>
 
-          <div class="col-4">
+          <div class="col-lg-4 col-12">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">旅.</h5>
               <img src="../assets/images/life-3.png" class="card-img-top mb-8" alt="...">
@@ -557,17 +559,18 @@
     </section>
     <!-- 生活提案 -->
     <section class="style-proposal bg-primary-200">
-      <div class="container py-17 ">
-        <div class="row d-flex align-items-center">
-          <div class="col-6">
-            <p class="fs-5 mb-3 ">獻給新世代的生活風格誌</p>
-            <h2 class="h2 mb-8 ">Vivre 給你意想不到的生活風格提案</h2>
+      <div class="container py-lg-17 py-10 ">
+        <div class="row d-flex align-items-center ">
+          <div class="col-lg-6 col-12 mb-10 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <p class="fs-5 mb-3 d-lg-block d-none">獻給新世代的生活風格誌</p>
+            <p class="fs-5 mb-3 d-block d-lg-none">今天又不知道要去哪裡了嗎？</p>
+            <h2 class="h2 mb-lg-8 mb-3"><span class="d-lg-inline-block d-flex justify-content-lg-start justify-content-center">Vivre</span> 給你意想不到的生活風格提案</h2>
             <a href="#" class="btn btn-accent-200  btn-sm link-light btn-primary-status">
               馬上訂閱<i class="ms-5 bi bi-arrow-right"></i>
             </a>
           </div>
 
-          <div class="col-3 mt-17">
+          <div class="col-lg-3 col-12 mt-lg-17">
             <div class="card position-relative mb-9 overflow-visible">
               <div class="badge-tag position-absolute ">
                 <span class="badge badge-light py-1 px-2"><i class="bi bi-play-fill me-2"></i>人氣行程</span>
@@ -575,72 +578,86 @@
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-1-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/content-3-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-1.png" alt="Logo">
+                  <img class="w-100" src="../assets/images/content-3.png" alt="Logo">
                 </picture>
 
                 <div class="card-img-overlay p-0 d-flex align-items-end justify-content-between h-100">
-                  <a href="#" class="py-3 px-2 d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
+                  <a href="#"
+                    class="py-3 px-2 d-none d-lg-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
                     More<i class="ms-auto bi bi-arrow-right"></i></a>
+                  <a href="#"
+                    class="py-3 px-2 d-lg-none d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">親子露營要帶什麼？<i
+                      class="ms-auto bi bi-arrow-right"></i></a>
                 </div>
               </a>
             </div>
-
-            <div class="card position-relative overflow-visible">
+            <div class="card position-relative mb-9 overflow-visible">
               <div class="badge-tag position-absolute ">
                 <span class="badge badge-light py-1 px-2"><i class="bi bi-play-fill me-2"></i>人氣行程</span>
               </div>
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-1-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/content-3-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-1.png" alt="Logo">
+                  <img class="w-100" src="../assets/images/content-3.png" alt="Logo">
                 </picture>
 
                 <div class="card-img-overlay p-0 d-flex align-items-end justify-content-between h-100">
-                  <a href="#" class="py-3 px-2 d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
+                  <a href="#"
+                    class="py-3 px-2 d-none d-lg-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
                     More<i class="ms-auto bi bi-arrow-right"></i></a>
+                  <a href="#"
+                    class="py-3 px-2 d-lg-none d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">親子露營要帶什麼？<i
+                      class="ms-auto bi bi-arrow-right"></i></a>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-3 mb-17">
-            <div class="card position-relative mb-9 overflow-visible ">
+          <div class="col-lg-3 col-12 mb-lg-17">
+            <div class="card position-relative mb-9 overflow-visible">
               <div class="badge-tag position-absolute ">
                 <span class="badge badge-light py-1 px-2"><i class="bi bi-play-fill me-2"></i>人氣行程</span>
               </div>
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-1-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/content-3-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-1.png" alt="Logo">
+                  <img class="w-100" src="../assets/images/content-3.png" alt="Logo">
                 </picture>
 
                 <div class="card-img-overlay p-0 d-flex align-items-end justify-content-between h-100">
-                  <a href="#" class="py-3 px-2 d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
+                  <a href="#"
+                    class="py-3 px-2 d-none d-lg-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
                     More<i class="ms-auto bi bi-arrow-right"></i></a>
+                  <a href="#"
+                    class="py-3 px-2 d-lg-none d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">親子露營要帶什麼？<i
+                      class="ms-auto bi bi-arrow-right"></i></a>
                 </div>
               </a>
             </div>
-
-            <div class="card position-relative overflow-visible">
+            <div class="card position-relative mb-9 overflow-visible">
               <div class="badge-tag position-absolute ">
                 <span class="badge badge-light py-1 px-2"><i class="bi bi-play-fill me-2"></i>人氣行程</span>
               </div>
               <a href="" class="stretched-link ">
                 <picture class="card-img">
                   <!-- 當螢幕寬度少於600px時，替換圖片 -->
-                  <source srcset="../asset/images/theme-1-sm.png" media="(max-width: 992px)">
+                  <source srcset="../assets/images/content-3-sm.png" media="(max-width: 992px)">
                   <!-- 預設圖片，通常是桌面版本 -->
-                  <img src="../assets/images/theme-1.png" alt="Logo">
+                  <img class="w-100" src="../assets/images/content-3.png" alt="Logo">
                 </picture>
 
                 <div class="card-img-overlay p-0 d-flex align-items-end justify-content-between h-100">
-                  <a href="#" class="py-3 px-2 d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
+                  <a href="#"
+                    class="py-3 px-2 d-none d-lg-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">View
                     More<i class="ms-auto bi bi-arrow-right"></i></a>
+                  <a href="#"
+                    class="py-3 px-2 d-lg-none d-flex align-items-center  text-white fw-bolder fs-5  w-100 z-1">親子露營要帶什麼？<i
+                      class="ms-auto bi bi-arrow-right"></i></a>
                 </div>
               </a>
             </div>
@@ -650,11 +667,11 @@
     </section>
     <!-- 由你決定-->
     <section class="contact bg-primary-100">
-      <div class="container py-17 d-flex justify-content-between">
-        <h2>想看什麼主題由你決定！</h2>
-        <div class="d-flex flex-column align-items-end ">
-          <h4 class="mb-3">歡迎投稿與我們分享</h4>
-          <a href="#" class="btn btn-accent-200 link-light btn-primary-status ms-auto">
+      <div class="container py-lg-17 py-10 d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between gap-3 gap-lg-0">
+        <h2>想看什麼主題由你決定<span class="d-none d-lg-inline-block">！</span></h2>
+        <div class="d-flex flex-column align-items-lg-end align-items-center">
+          <h4 class="mb-lg-3 mb-8">歡迎投稿與我們分享</h4>
+          <a href="#" class="btn btn-accent-200 link-light btn-primary-status ms-lg-auto">
             聯絡我們
           </a>
         </div>

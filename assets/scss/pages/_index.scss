@@ -93,6 +93,7 @@
 }
 
 .sales-event {
+  overflow-x: hidden;
 
   div {
     position: relative; //讓子元素定位
@@ -107,6 +108,10 @@
       height: 81px;
       background-image: url(/assets/images/bg-1.png);
       background-repeat: no-repeat;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     &::after {
@@ -119,6 +124,16 @@
       height: 196px;
       background-image: url(/assets/images/bg-2.png);
       background-repeat: no-repeat;
+      max-width: 100%;
+      background-size: contain; // 縮放以符合容器
+
+      @include mobile {
+        background-image: url(/assets/images/bg-2-sm.png);
+        width: 160px;
+        height: 104px;
+        right: 0; // ✅ 改成靠右
+        left: auto; // ✅ 移除固定 left
+      }
     }
   }
 }
