@@ -44,6 +44,7 @@
 
 .btn-gray-status {
   color: #52525B;
+
   &:hover {
     color: white;
     background-color: $gray-300;
@@ -51,11 +52,11 @@
   }
 }
 
-.d-inline-block{
+.d-inline-block {
   display: inline-block;
 }
 
-.text-nowrap{
+.text-nowrap {
   white-space: nowrap;
 }
 
@@ -63,10 +64,16 @@
   .w-lg-auto {
     width: auto !important;
   }
+
   .w-lg-100 {
     width: 100% !important;
   }
-  .d-lg-inline-block{
-  display: inline-block;
-}
+
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+
+  .fs-lg-4{
+    font-size: $h4-font-size;
+  }
 }
