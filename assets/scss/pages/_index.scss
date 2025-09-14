@@ -21,6 +21,16 @@
   }
 }
 
+.article {
+  aspect-ratio: 648 / 227;
+  /* 按照圖片比例自動撐開高度 */
+  width: 100%;
+
+  @include mobile {
+    aspect-ratio:25  / 16;
+  }
+
+}
 
 
 

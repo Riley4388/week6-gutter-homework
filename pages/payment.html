@@ -13,7 +13,7 @@
 <body>
     <%- include('./layout/header'); -%>
         <section class="bg-primary-100">
-            <div class="payment container py-17  border-top border-1 border-gray-300">
+            <div class="payment container py-lg-17 py-10 border-top border-1 border-gray-300">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
@@ -23,15 +23,15 @@
                 </nav>
                 <h1 class="h1 text-black mb-9">付款</h1>
                 <div class="row">
-                    <div class="col-7">
-                        <div class="bg-white border rounded-2 border-primary-300 p-9 mb-4">
+                    <div class="col-lg-7 col-12">
+                        <div class="bg-white border rounded-2 border-primary-300 p-lg-9 p-4 mb-4 ">
                             <div class="d-flex flex-column gap-9">
-                                <h4 class="text-black">註冊</h4>
+                                <h4 class="text-black">購買人</h4>
                                 <form class="d-flex flex-column gap-3">
                                     <div>
-                                        <label class="mb-2" for="registerAccount">會員帳號</label>
+                                        <label class="mb-2" for="registerAccount">姓名</label>
                                         <input type="text" class="form-control" id="registerAccount"
-                                            placeholder="請輸入會員帳號">
+                                            placeholder="請輸入姓名">
                                     </div>
                                     <div>
                                         <label class="mb-2" for="registerPassword">密碼</label>
@@ -52,7 +52,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="bg-white border rounded-2 border-primary-300 p-9">
+                        <div class="bg-white border rounded-2 border-primary-300 p-lg-9 p-4 mb-lg-0 mb-4">
                             <div class="d-flex flex-column gap-9">
                                 <h4 class="text-black">付款方式</h4>
                                 <form class="d-flex flex-column gap-3">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class="col-5">
+                    <div class="col-lg-5 col-12">
                         <div class="bg-white border rounded-2 border-accent-200 p-9 mb-4">
                             <div class="d-flex flex-column gap-9">
                                 <h4 class="text-accent-200">訂單資訊</h4>
