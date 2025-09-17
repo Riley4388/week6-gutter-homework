@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>文章內容</title>
-
+    <%- include('./layout/common'); -%>
 
 </head>
 
@@ -14,7 +14,7 @@
     <%- include('./layout/header'); -%>
 
         <main class="bg-primary-100">
-            <section class="container gx-0 gx-sm-3">
+            <section class="container gx-0 gx-sm-3" data-aos="fade-up" data-aos-duration="1500">
                 <picture>
                     <!-- 當螢幕寬度少於600px時，替換圖片 -->
                     <source srcset="../assets/images/article-banner-sm.png" media="(max-width: 992px)">
@@ -91,7 +91,8 @@
                             <a href="#" class="badge me-3">#山人</a>
                         </div>
                     </article>
-                    <div class="d-flex flex-column gap-lg-9 gap-5  my-lg-19 my-16">
+                    <div class="d-flex flex-column gap-lg-9 gap-5  my-lg-19 my-16" data-aos="fade-up"
+                        data-aos-duration="1500">
                         <h2 class="h2 text-gray-500">延伸閱讀</h2>
                         <div class="d-flex flex-column flex-lg-row position-relative">
                             <div class="flex-shrink-0">
@@ -101,7 +102,7 @@
                                     <!-- 預設圖片，通常是桌面版本 -->
                                     <img class="w-100" src="../assets/images/read-1.png" alt="...">
                                 </picture>
-                                
+
                             </div>
                             <div class="flex-grow-1 ms-lg-5 mt-3">
                                 <h5 class="h5 text-gray-500 mb-1">週末說走就走露營記</h5>
@@ -119,7 +120,7 @@
                                     <!-- 預設圖片，通常是桌面版本 -->
                                     <img class="w-100" src="../assets/images/read-2.png" alt="...">
                                 </picture>
-                                
+
                             </div>
                             <div class="flex-grow-1 ms-lg-5 mt-3">
                                 <h5 class="h5 text-gray-500 mb-1">週末說走就走露營記</h5>
@@ -129,7 +130,7 @@
                                 <a href="#" class="fs-5 fw-bolder w-100 text-end stretched-link">Read More</a>
                             </div>
                         </div>
-                         <div class="d-flex flex-column flex-lg-row position-relative">
+                        <div class="d-flex flex-column flex-lg-row position-relative">
                             <div class="flex-shrink-0">
                                 <picture>
                                     <!-- 當螢幕寬度少於600px時，替換圖片 -->
@@ -137,7 +138,7 @@
                                     <!-- 預設圖片，通常是桌面版本 -->
                                     <img class="w-100" src="../assets/images/read-3.png" alt="...">
                                 </picture>
-                                
+
                             </div>
                             <div class="flex-grow-1 ms-lg-5 mt-3">
                                 <h5 class="h5 text-gray-500 mb-1">週末說走就走露營記</h5>

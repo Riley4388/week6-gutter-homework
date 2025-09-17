@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>訂閱方案</title>
-
+    <%- include('./layout/common'); -%>
 
 </head>
 
@@ -29,9 +29,11 @@
                         </nav>
                     </div>
                 </div>
-                <div class="subscribe-items row mt-lg-9 mt-4 gap-5">
+                <div class="subscribe-items row flex-lg-nowrap mt-lg-9 mt-4 gap-5" data-aos="fade-up"
+                    data-aos-duration="1500">
                     <div class="col-lg-4 col-12 position-relative">
-                        <div class="bg-white border rounded-2 border-primary-300 p-lg-9 p-4 h-100 d-flex flex-column text-gray-400">
+                        <div
+                            class="bg-white border rounded-2 border-primary-300 p-lg-9 p-4 h-100 d-flex flex-column text-gray-400">
                             <div class="text-center mb-lg-12 mb-8">
                                 <p class="fs-5">輕量型</p>
                                 <p class="fs-4"><span class="fs-1">NT 99</span>/ 月</p>
@@ -60,13 +62,15 @@
                                 <p><i class="bi bi-check-square-fill me-1"></i>定期電子報</p>
                                 <p><i class="bi bi-check-square-fill me-1"></i>年度精選禮物</p>
                             </div>
-                            <a href="./payment.html" class="btn btn-sm w-100 btn-gray-100 btn-gray-status mt-lg-auto mt-12 stretched-link ">
+                            <a href="./payment.html"
+                                class="btn btn-sm w-100 btn-gray-100 btn-gray-status mt-lg-auto mt-12 stretched-link ">
                                 我要訂閱<i class="ms-5 bi bi-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-12 position-relative">
-                        <div class=" bg-white border rounded-2 border-primary-300 p-lg-9 p-4 h-100 d-flex flex-column text-gray-400  active">
+                        <div
+                            class=" bg-white border rounded-2 border-primary-300 p-lg-9 p-4 h-100 d-flex flex-column text-gray-400  active">
                             <div class="text-center mb-lg-12 mb-8">
                                 <p class="fs-5">家庭型</p>
                                 <p class="fs-4"><span class="fs-1">NT 599</span>/ 月</p>

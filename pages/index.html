@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <%- include('./layout/common'); -%>
+
 
 </head>
 
@@ -18,7 +18,8 @@
       <section class="container col-12 gx-0 border-top border-1 border-gray-300">
         <div
           class="banner d-flex align-items-lg-center align-items-end justify-content-lg-start  justify-content-center my-lg-17 border-top">
-          <div class="ms-lg-12 mb-10 mb-lg-0 d-flex flex-column align-items-lg-start align-items-center">
+          <div class="ms-lg-12 mb-10 mb-lg-0 d-flex flex-column align-items-lg-start align-items-center"
+            data-aos="fade-up" data-aos-duration="1500">
             <p class="fs-5 mb-2 text-white">獻給新世代的生活風格誌</p>
             <h1 class="h1 fw-bolder mb-5 text-white">一起探索生活的無限可能</h1>
             <!-- 桌面 -->
@@ -36,7 +37,7 @@
     </main>
     <!-- 熱門主題 -->
     <section class="hot bg-primary-100">
-      <div class="container py-lg-17 py-10">
+      <div class="container py-lg-17 py-10 " data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
         <h2 class="h2 text-gray-500 fw-bolder mb-5">熱門主題</h2>
         <div class="row gy-5">
           <div class="col-lg-3 col-12">
@@ -236,7 +237,8 @@
     </section>
     <!-- 活動 -->
     <section class="sales-event bg-primary-200">
-      <div class="container d-flex flex-column align-items-center py-17">
+      <div class="bg-decor container d-flex flex-column align-items-center py-lg-17 py-10">
+
         <p class="fs-4 mb-4 text-primary-400 fw-bolder">\ 母親節強檔活動 / </p>
         <h2 class="h2 mb-4">家庭訂閱方案限時 7 折</h2>
 
@@ -251,6 +253,7 @@
         <a href="#" class="btn btn-accent-200 link-light btn-primary-status">
           我想了解
         </a>
+
       </div>
     </section>
     <!-- 大家都在看 -->
@@ -511,7 +514,7 @@
         </div>
 
         <div class="row d-flex">
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1500">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">食.</h5>
               <img src="../assets/images/life-1.png" class="card-img-top mb-8" alt="...">
@@ -525,7 +528,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1500">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">藝.</h5>
               <img src="../assets/images/life-2.png" class="card-img-top mb-8" alt="...">
@@ -539,7 +542,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-duration="1500">
             <div class="card-body">
               <h5 class="card-title big-title mb-8 text-primary-400">旅.</h5>
               <img src="../assets/images/life-3.png" class="card-img-top mb-8" alt="...">
@@ -561,10 +564,12 @@
     <section class="style-proposal bg-primary-200">
       <div class="container py-lg-17 py-10 ">
         <div class="row d-flex align-items-center ">
-          <div class="col-lg-6 col-12 mb-10 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+          <div class="col-lg-6 col-12 mb-10 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start" >
             <p class="fs-5 mb-3 d-lg-block d-none">獻給新世代的生活風格誌</p>
             <p class="fs-5 mb-3 d-block d-lg-none">今天又不知道要去哪裡了嗎？</p>
-            <h2 class="h2 mb-lg-8 mb-3"><span class="d-lg-inline-block d-flex justify-content-lg-start justify-content-center">Vivre</span> 給你意想不到的生活風格提案</h2>
+            <h2 class="h2 mb-lg-8 mb-3"><span
+                class="d-lg-inline-block d-flex justify-content-lg-start justify-content-center">Vivre</span>
+              給你意想不到的生活風格提案</h2>
             <a href="#" class="btn btn-accent-200  btn-sm link-light btn-primary-status">
               馬上訂閱<i class="ms-5 bi bi-arrow-right"></i>
             </a>
@@ -666,8 +671,9 @@
       </div>
     </section>
     <!-- 由你決定-->
-    <section class="contact bg-primary-100">
-      <div class="container py-lg-17 py-10 d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between gap-3 gap-lg-0">
+    <section class="contact bg-primary-100 ">
+      <div
+        class="container py-lg-17 py-10 d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-between gap-3 gap-lg-0">
         <h2>想看什麼主題由你決定<span class="d-none d-lg-inline-block">！</span></h2>
         <div class="d-flex flex-column align-items-lg-end align-items-center">
           <h4 class="mb-lg-3 mb-8">歡迎投稿與我們分享</h4>
@@ -683,21 +689,7 @@
 
       <!-- 套件 -->
       <script type="module" src="../main.js"></script>
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        }); 
-      </script>
+
 </body>
 
 </html>
